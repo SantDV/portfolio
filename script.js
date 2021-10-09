@@ -6,6 +6,8 @@ $(document).ready(function(){
         $('#toggle').toggleClass('active');
         $('body').toggleClass('active');
         $('header').toggleClass('active');
+        $('.box').toggleClass('active');
+        $('.heading').toggleClass('active');
         
     })
 

@@ -2,6 +2,7 @@
 
 :root{
     --yellow:#f9ca24;
+    --blue:#2565ae;
 }
 
 *{
@@ -37,13 +38,117 @@ body{
     transition: .5s;
 }
 
+/* ===================================== */
+
+.heading.active span{
+    color: var(--blue);
+}
+
+body.active{
+    background: #eee;
+    color: #111;
+}
+
+body.active header{
+    background: var(--blue);
+}
+
+body.active .heading{
+    border-bottom: .1rem solid #111;
+}
+
+
+
+body.active .btn{
+    background: var(--blue);
+}
+
+body.active .btn:hover{
+    background: var(--yellow);
+}
+
+body.active header .navbar ul li a{
+    background: rgb(192, 192, 192);
+}
+
+body.active header .navbar ul li a:hover{
+    background: var(--yellow);
+}
+
+body.active section .row .counter .box{
+    background: #444;
+}
+
+body.active section .box-container .box i{
+    background: var(--blue);
+}
+
+body.active .box-container .box p{
+    color: #000;
+}
+
+body.active .home span{
+    color: var(--blue);
+}
+
+body.active .home h3 {
+    color: #000;
+}
+body.active .home h1 {
+    color: #000;
+}
+body.active .home p {
+    color: #000;
+}
+
+header.active .user h3{
+    color: #000;
+}
+header.active .user p{
+    color: #000;
+}
+
+body.active section h1{
+    color: #000;
+}
+
+body.active section .row .content .info h3 i{
+    color: var(--blue);
+}
+
+body.active section .row .content .info h3{
+    color: #000;
+}
+
+body.active section .row .content h3{
+    color: #000 !important;
+}
+
+body.active section .row .info h3{
+    color: #000 !important;
+}
+
+body.active section .row .info span{
+    color: var(--blue) !important;
+}
+
+body.active .btn:hover{
+    background: var(--yellow);
+}
+
+.box.active h3{
+    color: #000 !important;
+}
+
+/* ===================================== */
+
 #toggle{
     position: relative;
     display: block;
-    width: 320px;
-    height: 160px;
+    width: 64px;
+    height: 32px;
     border-radius: 160px;
-    background: #222;
+    background:rgb(192, 192, 192);;
     transition: .5s;
     cursor: pointer;
     box-shadow: inset 0 8px 60px rgba(0,0,0,0,1),
@@ -55,8 +160,8 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    width: 160px;
-    height: 160px;
+    width: 32px;
+    height: 32px;
     background: linear-gradient(to botton, #444, #222);
     border-radius: 50%;
     transform: scale(0.9);
@@ -66,15 +171,7 @@ body{
 }
 
 #toggle.active .indicator{
-    left: 160px;
-}
-
-body.active{
-    background: #fff;
-}
-
-header.active{
-    background: #eee;
+    left: 32px;
 }
 
 section{
@@ -114,6 +211,7 @@ section{
     color: var(--yellow);
 }
 
+
 header{
     position: fixed;
     top: 0; left: 0;
@@ -129,8 +227,8 @@ header{
 }
 
 header .user img{
-    height: 17rem;
-    width: 17rem;
+    height: 28rem;
+    width: 28rem;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1rem;
@@ -390,9 +488,14 @@ header .navbar ul li a:hover{
     font-weight: normal;
 }
 
+
 .contact .row .content .info h3 i{
     padding-right: 1rem;
     color: var(--yellow);
+}
+
+.contact .row .content .info h3 i:hover{
+    font-size: 3rem;
 }
 
 .top{
