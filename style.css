@@ -76,7 +76,7 @@ body.active header .navbar ul li a:hover{
 }
 
 body.active section .row .counter .box{
-    background: #444;
+    background: #999;
 }
 
 body.active section .box-container .box i{
@@ -343,21 +343,199 @@ header .navbar ul li a:hover{
 
 .about .row .counter .box{
     width: 20rem;
-    background: #222;
+    background: #777;
     text-align: center;
     padding: 2rem;
     margin: 2rem;
+    border-radius: 3px;
 }
 
-.about .row .counter .box span{
-    font-size: 4rem;
+
+
+/* skills bar */
+
+.skills{
+    font-size: 2.5rem;
     color: var(--yellow);
+    padding: 1rem 0;
 }
 
-.about .row .counter .box h3{
+.about .row .counter .box p{
     font-size: 2rem;
     color: #fff;
+    margin-bottom: 15px;
 }
+
+.skills__bar{
+    width: 100%;
+    height: 8px;
+    background: #fff;
+    position: relative;
+}
+
+.skills__bar::before{
+    content: '';
+    background: var(--yellow);
+
+    height: 8px;
+    position: absolute;
+    left: 0;
+    box-shadow: 0px 0px 8px 1px #b8c041;
+}
+
+
+body.active .skills__bar::before{
+    content: '';
+    background: var(--blue);
+    box-shadow: 0px 0px 8px 1px #4191c0;
+}
+
+body.active .skills{   
+    color: var(--blue);
+}
+
+
+.skills__bar--10::before{
+    animation: bar-10 1s linear forwards;
+}
+
+.skills__bar--20::before{
+    animation: bar-20 1s linear forwards;
+}
+
+.skills__bar--30::before{
+    animation: bar-30 1s linear forwards;
+}
+
+.skills__bar--40::before{
+    animation: bar-40 1s linear forwards;
+}
+
+.skills__bar--50::before{
+    animation: bar-50 1s linear forwards;
+}
+
+.skills__bar--60::before{
+    animation: bar-60 1s linear forwards;
+}
+
+.skills__bar--70::before{
+    animation: bar-70 1s linear forwards;
+}
+
+.skills__bar--80::before{
+    animation: bar-80 1s linear forwards;
+}
+
+.skills__bar--90::before{
+    animation: bar-90 1s linear forwards;
+}
+
+.skills__bar--100::before{
+    animation: bar-100 1s linear forwards;
+}
+
+@keyframes bar-10 {
+    0%{
+        width: 0;
+    }
+    
+    100%{
+        width: 10%;
+    }
+}
+
+@keyframes bar-20 {
+    0%{
+        width: 0;
+    }
+    
+    100%{
+        width: 20%;
+    }
+}
+
+@keyframes bar-30 {
+    0%{
+        width: 0;
+    }
+    
+    100%{
+        width: 30%;
+    }
+}
+
+@keyframes bar-40 {
+    0%{
+        width: 0;
+    }
+    
+    100%{
+        width: 40%;
+    }
+}
+
+@keyframes bar-50 {
+    0%{
+        width: 0;
+    }
+    
+    100%{
+        width: 50%;
+    }
+}
+
+@keyframes bar-60 {
+    0%{
+        width: 0;
+    }
+    
+    100%{
+        width: 60%;
+    }
+}
+
+@keyframes bar-70 {
+    0%{
+        width: 0;
+    }
+    
+    100%{
+        width: 70%;
+    }
+}
+
+@keyframes bar-80 {
+    0%{
+        width: 0;
+    }
+    
+    100%{
+        width: 80%;
+    }
+}
+
+@keyframes bar-90 {
+    0%{
+        width: 0;
+    }
+    
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes bar-100 {
+    0%{
+        width: 0;
+    }
+    
+    100%{
+        width: 100%;
+    }
+}
+
+/* fin skills bars */
 
 .education .box-container{
     display: flex;
@@ -505,11 +683,6 @@ header .navbar ul li a:hover{
     z-index: 100;
     display: none;
 }
-
-
-
-
-
 
 
 @media (max-width:1200px){
