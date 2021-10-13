@@ -2,7 +2,7 @@
 
 :root{
     --yellow:#f9ca24;
-    --blue:#2565ae;
+    --blue:#3575be;
 }
 
 *{
@@ -69,6 +69,7 @@ body.active .btn:hover{
 
 body.active header .navbar ul li a{
     background: rgb(192, 192, 192);
+    color: #000;
 }
 
 body.active header .navbar ul li a:hover{
@@ -222,8 +223,9 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-flow: column;
+    flex-direction: column;
     text-align: center;
+
 }
 
 header .user img{
@@ -263,6 +265,8 @@ header .navbar ul li a{
     color: #fff;
     font-size: 2rem;
     border-radius: 5rem;
+    text-transform: uppercase;
+    font-weight: 800;
 }
 
 header .navbar ul li a:hover{
