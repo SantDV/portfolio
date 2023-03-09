@@ -38,6 +38,10 @@ body{
     transition: .5s;
 }
 
+.single_contact{
+    padding-left: 0 !important;
+}
+
 /* ===================================== */
 
 .heading.active span{
